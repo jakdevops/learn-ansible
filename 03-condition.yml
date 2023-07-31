@@ -13,4 +13,4 @@
     - name: print car name
       ansible.builtin.debug:
         msg: cars name - hundai
-        when: model is false
+        when: model is true
