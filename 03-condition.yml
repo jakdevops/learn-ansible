@@ -2,15 +2,16 @@
   hosts: all
   connection: local
   vars:
-    company: true
-    model: false
-  tasks:
-    - name: print car name
-      ansible.builtin.debug:
-        msg: cars name - suzuki
-        when: company is true
+    fruit: true
+    vegatable: false
 
-    - name: print car name
+  tasks:
+    - name: print fruit name
       ansible.builtin.debug:
-        msg: cars name - hundai
-        when: model is true
+        msg: fruit name - apple
+        when: fruit is true
+
+    - name: print vegetable name
+      ansible.builtin.debug:
+        msg: vegetable name - carrot
+        when: vegatable is true
