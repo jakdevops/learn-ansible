@@ -1,6 +1,7 @@
 - name: demo on conditions
   hosts: all
   tasks:
+  connection: localhost
     - name: print car name
       ansible.builtin.debug:
         msg: cars name - suzuki
