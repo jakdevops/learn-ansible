@@ -1,0 +1,10 @@
+- name: demo on conditions
+  hosts: all
+  tasks:
+    - name: print car name
+      ansible.builtin.debug:
+        msg: cars name - suzuki
+
+    - name: print car name
+      ansible.builtin.debug:
+        msg: cars name - hyndai
